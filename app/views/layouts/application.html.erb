@@ -14,6 +14,12 @@
   </head>
 
   <body>
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon d-flex justify-content-center">
+      <%= link_to root_path, class: "navbar-brand" do %>
+        <%= image_tag "gardening.svg" %>
+      <% end %>
+    </div>
+
     <%= yield %>
   </body>
 </html>

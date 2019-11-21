@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>The form to link <%= @plant.name %> to tag</h1>
+  
+
+  <%= simple_form_for([@plant, @plant_tag]) do |f| %>
+    <%= f.association :tag %>
+    <%= f.association :plant %>
+
+    <%= f.button :submit, class: 'btn btn-primary' %>
+  <% end %>
+    
+</div>
+
